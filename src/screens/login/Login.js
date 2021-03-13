@@ -6,7 +6,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Button from '@material-ui/core/Button';
 import Input from '@material-ui/core/Input';
 import Header from '../../common/header/Header';
-import { FormHelperText } from '@material-ui/core';
+import {FormHelperText} from '@material-ui/core';
 
 class Login extends Component {
     render() {
@@ -18,18 +18,22 @@ class Login extends Component {
                         <p className="LoginTitle">LOGIN</p>
                         <FormControl required>
                             <InputLabel htmlFor="username">Username</InputLabel>
-                            <Input id="username" type="text" />
+                            <Input id="username" type="text" className="InputField" style = {{width: 400}}/>
+                            <FormHelperText className="HelperText">required</FormHelperText>
                         </FormControl>
                         <br/>
                         <br/>
                         <FormControl required>
                             <InputLabel htmlFor="password">Password</InputLabel>
-                            <Input id="password" type="password" />
+                            <Input id="password" type="password" className="InputField" style = {{width: 400}}/>
+                            <FormHelperText className="HelperText">required</FormHelperText>
                         </FormControl>
                         <br/>
                         <br/>
                         <br/>
                         <Button variant="contained" color="primary" className="LoginBtn">LOGIN</Button>
+                        <br/>
+                        <br/>
                     </Card>
                 </div>
             </div>
