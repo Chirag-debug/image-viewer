@@ -6,7 +6,8 @@
     background-color: #263238;
     align-items: center;
 }
-.HeaderTitle {
-    color: white;
-    font-size: 22px;
+.AppLogo {
+    color:#fff;
+    font-size: 18px;
+    vertical-align: middle;
 }

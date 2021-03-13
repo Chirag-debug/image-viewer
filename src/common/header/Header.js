@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <div className="HeaderBar">
-                <div className="HeaderTitle">
+                <div className="AppLogo">
                 Image Viewer
                 </div>
             </div>
