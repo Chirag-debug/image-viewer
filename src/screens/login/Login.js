@@ -15,7 +15,7 @@ class Login extends Component {
                 <Header/>
                 <div className="PageBody">
                     <Card   className="LoginCard">
-                        <p className="LoginTitle">LOGIN</p>
+                        <p className="LoginTitle" >Login</p>
                         <FormControl required>
                             <InputLabel htmlFor="username">Username</InputLabel>
                             <Input id="username" type="text" className="InputField" style = {{width: 400}}/>

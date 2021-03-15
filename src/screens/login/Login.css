@@ -15,6 +15,7 @@
 }
 .LoginTitle {
     font-size: 30px;
+    text-transform: uppercase;
 }
 .LoginBtn {
     cursor: pointer;
