@@ -20,6 +20,6 @@
 .LoginBtn {
     cursor: pointer;
 }
-.HelperText {
+.warning {
     color: red;
 }
