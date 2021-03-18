@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Input from '@material-ui/core/Input';
 import Header from '../../common/header/Header';
 import {FormHelperText} from '@material-ui/core';
+import {Redirect} from 'react-router-dom';
 
 class Login extends Component {
     constructor() {
@@ -45,10 +46,15 @@ class Login extends Component {
             sessionStorage.setItem("access-token", accessToken);
             this.setState({flag: true });
         } 
+        else {
+            this.setState({incorrectCredentials: "dispBlock"});
+        }
     }
 
     render() {
         return (
+        <div>
+        {this.state.flag === true ? <Redirect to = "/home"/> :
             <div>
                 <Header/>
                 <div className="PageBody">
@@ -75,8 +81,10 @@ class Login extends Component {
                     </Card>
                 </div>
             </div>
+        }
+        </div>
         );
     }
 }
 
-export default Login;
+export default Login;   
